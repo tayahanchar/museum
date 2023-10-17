@@ -1,6 +1,62 @@
 @import 'fonts';
+@import 'colors';
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: $font-roboto;
   font-weight: 400;
+  color: $white-color;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: $black-color;
+}
+
+.header__content {
+  @extend %flex-row;
+  justify-content: space-between;
+  padding: 60px 0px 58px 0px;
+}
+
+.logo {
+  @extend %flex-row;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.logo__text {
+  font-family: $font-forum;
+  font-size: 28px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.nav__list {
+  width: 775px;
+  @extend %flex-row;
+  justify-content: space-between;
+}
+
+.nav__link {
+  font-size: 22px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+
+  &:hover {
+    color: $gold-color;
+  }
 }
