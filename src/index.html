@@ -7,38 +7,71 @@
   <title>Museum</title>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__content">
-        <div class="logo">
-          <img src="./assets/svg/logo.svg" alt="logo">
-          <span class="logo__text">Louvre</span>
-        </div>
+  <div class="main-page ">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="logo">
+            <img src="./assets/svg/logo.svg" alt="logo">
+            <span class="logo__text">Louvre</span>
+          </div>
 
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="">Visiting</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Explore</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Video</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Gallery</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Tickets</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="">Visiting</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Explore</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Video</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Gallery</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Tickets</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+
+    <section class="welcome">
+      <div class="container">
+        <div class="welcome__content">
+          <h1 class="welcome__title">Welcome <br> to the Louvre</h1>
+          <p class="welcome__description">From the castle to the museum</p>
+          <button class="welcome__button">Discover the Louvre</button>
+
+          <div class="welcome__pagination">
+            <div class="welcome__slide-num">
+              <span class="slide-num">01</span>
+              <span class="slide-num">|</span>
+              <span class="slide-num">05</span>
+            </div>
+
+            <div class="welcome__carousel">
+              <div class="carousel-item carousel-item-active"></div>
+              <div class="carousel-item"></div>
+              <div class="carousel-item"></div>
+              <div class="carousel-item"></div>
+              <div class="carousel-item"></div>
+            </div>
+
+            <div class="arrows">
+              <button class="left-arrow"></button>
+              <button class="right-arrow"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

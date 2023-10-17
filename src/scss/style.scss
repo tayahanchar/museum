@@ -15,6 +15,7 @@
   color: $white-color;
   list-style: none;
   text-decoration: none;
+  border: none;
 }
 
 .container {
@@ -22,8 +23,8 @@
   margin: 0 auto;
 }
 
-.header {
-  background-color: $black-color;
+.main-page {
+  background-color: black;
 }
 
 .header__content {
@@ -59,4 +60,115 @@
   &:hover {
     color: $gold-color;
   }
+}
+
+.welcome {
+  padding-bottom: 60px;
+}
+
+.welcome__content {
+  position: relative;
+  height: 750px;
+  background-image: url(../assets/img/1.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+
+  box-shadow: inset 600px 0px 200px $black-color;
+}
+
+.welcome__title {
+  padding-top: 150px;
+  padding-bottom: 25px;
+  font-family: $font-forum;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.welcome__description {
+  padding-bottom: 75px;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.welcome__button {
+  width: 360px;
+  height: 75px;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  background-color: $red-color;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $gold-color;
+  }
+}
+
+.welcome__pagination {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  width: 600px;
+  height: 120px;
+  background-color: black;
+}
+
+.welcome__slide-num {
+  padding-right: 55px;
+  @extend %flex-row;
+  gap: 10px;
+}
+
+.slide-num {
+  font-size: 22px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.welcome__pagination {
+  @extend %flex-row;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome__carousel {
+  @extend %flex-row;
+  gap: 25px;
+  padding-right: 60px;
+}
+
+.carousel-item {
+  width: 16px;
+  height: 16px;
+  background-color: $white-color;
+}
+
+.carousel-item-active {
+  background-color: $gold-color;
+}
+
+.arrows {
+  @extend %flex-row;
+  gap: 20px;
+}
+
+.left-arrow {
+  width: 30px;
+  height: 8px;
+  background-image: url(../assets/svg/left-arrow.svg);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.right-arrow {
+  width: 30px;
+  height: 8px;
+  background-image: url(../assets/svg/right-arrow.svg);
+  background-color: transparent;
+  cursor: pointer;
 }
