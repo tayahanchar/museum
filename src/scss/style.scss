@@ -235,3 +235,48 @@
   color: #000;
   font-size: 18px;
 }
+
+.picture-explore {
+  padding: 72px 0px;
+  background-color: $black-color;
+}
+
+.picture-explore__content {
+  @extend %flex-row;
+  justify-content: space-between;
+  gap: 58px;
+}
+
+.picture-explore__title {
+  padding-bottom: 103px;
+  font-family: $font-forum;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    background-color: $red-color;
+    display: block;
+    width: 660px;
+    height: 3px;
+    position: relative;
+    bottom: -23px;
+  }
+}
+
+.picture-explore__descr {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  & p {
+    font-size: 22px;
+    line-height: 38.5px;
+  }
+}
+
+.picture-explore__picture {
+  padding-top: 15px;
+}
