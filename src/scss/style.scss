@@ -172,3 +172,66 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+.virtual-tour {
+  padding: 75px 0;
+}
+
+.virtual-tour__title {
+  padding-bottom: 25px;
+  color: $gold-color;
+  font-family: $font-forum;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    background-color: $red-color;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 3px;
+    bottom: -27px;
+  }
+}
+
+.virtual-tour__list {
+  padding-top: 75px;
+  @extend %flex-row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 75px 0px;
+}
+
+.card__title {
+  padding-top: 21px;
+  padding-bottom: 22px;
+  color: #000;
+  font-family: $font-forum;
+  font-size: 32px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    background-color: $red-color;
+    display: block;
+    width: 300px;
+    height: 2px;
+    position: relative;
+    bottom: -10px;
+  }
+}
+
+.card__subtitle {
+  padding-bottom: 10px;
+  color: #000;
+  font-size: 22px;
+}
+
+.card__desc {
+  color: #000;
+  font-size: 18px;
+}
