@@ -282,7 +282,7 @@
 }
 
 .video {
-  padding: 77px 0px 75px 0px;
+  padding: 77px 0px 68px 0px;
 }
 
 .video__descr {
@@ -446,4 +446,42 @@
 .video-pagination__left {
   color: $gray-color;
   cursor: pointer;
+}
+
+.art-gallery {
+  padding-top: 75px;
+  background-color: $black-color;
+}
+
+.art-gallery__title {
+  padding-bottom: 75px;
+  font-family: $font-forum;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.art-gallery__list {
+  @extend %flex-row;
+  gap: 36px;
+  overflow: hidden;
+  height: 1960px;
+}
+
+.art-gallery__column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 456px;
+
+  & img:last-child {
+    filter: blur(1px);
+    filter: opacity(50%); 
+  }
+}
+
+.art-gallery__column1,
+.art-gallery__column3 {
+  padding-top: 50px;
 }
