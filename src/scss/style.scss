@@ -628,3 +628,32 @@ input[type=radio]:checked + label:before {
   background-size: cover;
   background-position: 0% 71%;
 }
+
+.contacts__content {
+  @extend %flex-row;
+  justify-content: space-between;
+  margin-top: 75px;
+  margin-bottom: 74px;
+}
+
+.map {
+  width: 960px;
+}
+
+.contacts__name {
+  width: 227px;
+  padding-bottom: 50px;
+  color: #000;
+  font-size: 28px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contacts__list p {
+  color: #000;
+  font-size: 22px;
+}
