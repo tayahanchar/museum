@@ -397,6 +397,18 @@
 
 .virtual-tour {
   padding: 75px 0;
+
+  @media (max-width: 1160px) {
+    & {
+      padding: 60px 0px;
+    }
+  }
+
+  @media (max-width: 870px) {
+    & {
+      padding: 40px 0px;
+    }
+  }
 }
 
 .virtual-tour__title {
@@ -417,6 +429,32 @@
     height: 3px;
     bottom: -27px;
   }
+
+  @media (max-width: 1160px) {
+    & {
+      font-size: 50px;
+      line-height: 75px;
+      padding-bottom: 6px;
+    }
+
+    &::after {
+      bottom: -20px;
+    }
+  }
+
+  @media (max-width: 870px) {
+    & {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    & {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
 }
 
 .virtual-tour__list {
@@ -424,7 +462,41 @@
   @extend %flex-row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 75px 0px;
+  gap: 75px 20px;
+
+  @media (max-width: 1400px) {
+    & {
+      justify-content: center;
+      gap: 58px 108px;
+    }
+  }
+
+  @media (max-width: 870px) {
+    & {
+      gap: 38px 56px;
+      padding-top: 56px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    & {
+      gap: 35px 56px;
+    }
+  }
+}
+
+.card__img {
+  @media (max-width: 1160px) {
+    & {
+      width: 330px;
+    }
+  }
+
+  @media (max-width: 870px) {
+    & {
+      width: 280px;
+    }
+  }
 }
 
 .card__title {
@@ -445,17 +517,65 @@
     position: relative;
     bottom: -10px;
   }
+
+  @media (max-width: 1160px) {
+    & {
+      font-size: 28px;
+      letter-spacing: 3px;
+    }
+
+    &::after {
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 870px) {
+    & {
+      font-size: 22px;
+      padding-top: 18px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    & {
+      padding-top: 16px;
+    }
+  }
 }
 
 .card__subtitle {
   padding-bottom: 10px;
   color: #000;
   font-size: 22px;
+
+  @media (max-width: 1160px) {
+    & {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 870px) {
+    & {
+      font-size: 18px;
+    }
+  }
 }
 
 .card__desc {
   color: #000;
   font-size: 18px;
+
+  @media (max-width: 1160px) {
+    & {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 870px) {
+    & {
+      font-size: 16px;
+    }
+  }
 }
 
 .picture-explore {
