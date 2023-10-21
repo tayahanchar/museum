@@ -406,7 +406,13 @@
 
   @media (max-width: 870px) {
     & {
-      padding: 40px 0px;
+      padding: 40px 0px 80px 0px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    &{
+      padding: 40px 0px 37px 0px;
     }
   }
 }
@@ -581,12 +587,38 @@
 .picture-explore {
   padding: 72px 0px;
   background-color: $black-color;
+
+  @media (max-width: 1300px) {
+    & {
+      padding: 58px 0px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      padding: 42px 0px;
+    }
+  }
 }
 
 .picture-explore__content {
   @extend %flex-row;
   justify-content: space-between;
   gap: 58px;
+
+  @media (max-width: 1540px) {
+    & {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & div:first-child {
+      align-self:stretch;
+    }
+  }
 }
 
 .picture-explore__title {
@@ -606,6 +638,41 @@
     position: relative;
     bottom: -23px;
   }
+
+  @media (max-width: 1540px) {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &::after {
+      bottom: -19px;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    & {
+      font-size: 50px;
+      line-height: 75px;
+      padding-bottom: 82px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      font-size: 40px;
+      line-height: 60px;
+      padding-bottom: 4px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    &{
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
 }
 
 .picture-explore__descr {
@@ -617,10 +684,48 @@
     font-size: 22px;
     line-height: 38.5px;
   }
+
+  @media (max-width: 1300px) {
+    & p:last-child {
+      display: none;
+    }
+
+    & p {
+      font-size: 20px;
+    }
+
+    & {
+      gap: 0px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      display: none;
+    }
+  }
 }
 
 .picture-explore__picture {
   padding-top: 15px;
+
+  @media (max-width: 768px) {
+    & {
+      padding-top: 19px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    & {
+      width: 380px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    &{
+      padding-top: 10px;
+    }
+  }
 }
 
 .video {
