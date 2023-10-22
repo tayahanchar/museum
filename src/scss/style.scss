@@ -1500,9 +1500,13 @@ input[type=radio]:checked + label:before {
   background-size: cover;
   background-position: 0% 71%;
 
+  @media (max-width: 1024px) {
+    margin-bottom: 59px;
+  }
+
   @media (max-width: 768px) {
     height: 300px;
-    margin-bottom: 49px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1511,10 +1515,36 @@ input[type=radio]:checked + label:before {
   justify-content: space-between;
   margin-top: 75px;
   margin-bottom: 74px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 67px;
+  }
+
+  @media (max-width: 1020px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 53px;
+    margin-bottom: 95px;
+  }
+
+  @media (max-width: 500px) {
+    margin-bottom: 48px;
+  }
 }
 
 .map {
   width: 960px;
+
+  @media (max-width: 1350px) {
+    width: 694px;
+  }
+
+  @media (max-width: 740px) {
+    width: 380px;
+  }
 }
 
 .contacts__name {
@@ -1522,17 +1552,43 @@ input[type=radio]:checked + label:before {
   padding-bottom: 50px;
   color: #000;
   font-size: 28px;
+
+  @media (max-width: 1024px) {
+    font-size: 24px;
+    width: 185px;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 18px;
+  }
 }
 
 .contacts__list {
   display: flex;
   flex-direction: column;
   gap: 25px;
+
+  @media (max-width: 1024px) {
+    gap: 16px;
+  }
 }
 
 .contacts__list p {
   color: #000;
   font-size: 22px;
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
 }
 
 .footer {
