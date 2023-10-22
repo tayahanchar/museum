@@ -1619,6 +1619,7 @@ input[type=radio]:checked + label:before {
   @extend %flex-row;
   justify-content: space-between;
   position: relative;
+  gap: 40px;
 
   &::after {
     content: "";
@@ -1628,6 +1629,34 @@ input[type=radio]:checked + label:before {
 	  position: absolute;
 	  bottom: 4px;
     background-color: $gray-color;
+
+    @media (max-width: 768px) {
+      left: 0px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 63px 0px 57px 0px;
+  }
+
+  @media (max-width: 1023px) {
+    flex-wrap: wrap;
+    padding-right: 57px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 49px 57px 57px 0px;
+    justify-content: center;
+  }
+
+  @media (max-width: 440px) {
+    display: none;
+  }
+}
+
+.rs {
+  @media (max-width: 700px) {
+    display: none;
   }
 }
 
